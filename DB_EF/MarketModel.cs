@@ -10,6 +10,7 @@ namespace DB_EF
         public MarketModel()
             : base("name=MarketModel")
         {
+
         }
         public virtual DbSet<AbstractProduct> AbstractProducts { get; set; }
         public virtual DbSet<Adress> Adresses { get; set; }
@@ -21,6 +22,5 @@ namespace DB_EF
         public virtual DbSet<RealProduct> RealProducts { get; set; }
         public virtual DbSet<Status> Statuses { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        //f
     }
 }
