@@ -21,5 +21,6 @@ namespace DB_EF
         public virtual DbSet<RealProduct> RealProducts { get; set; }
         public virtual DbSet<Status> Statuses { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        //f
     }
 }
