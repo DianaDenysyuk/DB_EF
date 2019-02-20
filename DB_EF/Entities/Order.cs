@@ -11,8 +11,8 @@ namespace DB_EF.Entities
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
         public int Quantity { get; set; }
-        public Adress DeliveryAdress { get; set; }
-        public RealProduct RealProduct { get; set; }
-        public User User { get; set; }
+        public virtual Adress DeliveryAdress { get; set; }
+        public virtual RealProduct RealProduct { get; set; }
+        public virtual User User { get; set; }
     }
 }

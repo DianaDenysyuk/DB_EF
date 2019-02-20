@@ -8,6 +8,10 @@ namespace DB_EF.Entities
 {
     public class Category
     {
+        public Category()
+        {
+            AbstractProducts = new HashSet<AbstractProduct>();
+        }
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

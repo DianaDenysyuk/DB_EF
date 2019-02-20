@@ -8,6 +8,10 @@ namespace DB_EF.Entities
 {
     public class Building
     {
+        public Building()
+        {
+            Adresses = new HashSet<Adress>();
+        }
         public int Id { get; set; }
         public int Number { get; set; }
         public string Latter { get; set; }

@@ -13,8 +13,11 @@ namespace DB_EF
         {
             using (MarketModel db = new MarketModel())
             {
-                var res = db.Users.Count().ToString();
-                Debug.WriteLine(res);
+                var res = db.Users.Count();
+                Console.WriteLine(res);
+
+
+
             }
         }
     }

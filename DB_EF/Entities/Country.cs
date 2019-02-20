@@ -8,6 +8,10 @@ namespace DB_EF.Entities
 {
     public class Country
     {
+        public Country()
+        {
+            Adresses = new HashSet<Adress>();
+        }
         public int Id { get; set; }
         public string Name { get; set; }
         public string CityName { get; set; }

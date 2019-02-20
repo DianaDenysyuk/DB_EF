@@ -8,9 +8,13 @@ namespace DB_EF.Entities
 {
     public class Producer
     {
+        public Producer()
+        {
+            RealProducts = new HashSet<RealProduct>();
+        }
         public int Id { get; set; }
         public string Name { get; set; }
-        public Adress Adress { get; set; }
+        public virtual Adress Adress { get; set; }
         public virtual ICollection<RealProduct> RealProducts { get; set; }
     }
 }
